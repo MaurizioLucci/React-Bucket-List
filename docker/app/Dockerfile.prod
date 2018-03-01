@@ -1,0 +1,18 @@
+FROM node:9.6.1-alpine as build-deps
+
+RUN mkdir /usr/app
+WORKDIR /usr/app
+ADD /app .
+RUN yarn --pure-lockfile
+RUN yarn run build
+
+FROM node:9.6.1-alpine
+
+WORKDIR /usr/app
+
+RUN yarn global add serve
+
+COPY --from=build-deps /usr/app/build build
+
+EXPOSE 3000
+CMD serve -s build ./ -p 3000

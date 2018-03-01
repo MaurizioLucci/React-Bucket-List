@@ -1,0 +1,7 @@
+[2018-02-26T13:48:33.126] [ERROR] log - Cheese is too ripe!
+[2018-02-26T13:48:33.135] [FATAL] log - Cheese was breeding ground for listeria.
+[2018-02-26T13:49:16.845] [DEBUG] log - Got cheese.
+[2018-02-26T13:49:16.847] [INFO] log - Cheese is Gouda.
+[2018-02-26T13:49:16.847] [WARN] log - Cheese is quite smelly.
+[2018-02-26T13:49:16.847] [ERROR] log - Cheese is too ripe!
+[2018-02-26T13:49:16.847] [FATAL] log - Cheese was breeding ground for listeria.
